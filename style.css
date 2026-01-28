@@ -4,15 +4,22 @@
   }
 }
 
+html, body {
+  margin: 0;
+  padding: 0;
+  background: #fbffc8; /* same as your main background */
+  overflow-x: hidden;
+}
+
+
 .background {
-z-index: -10000;
   position: fixed;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   top: 0;
   left: 0;
-  background: #fbffc8;
-  overflow: hidden;
+  z-index: -1;
+  pointer-events: none;
 }
 
 .ball {
@@ -105,6 +112,7 @@ html {
 body {
   width: 100%;
   margin: auto;
+  background: transparent;
 }
 
 .brand-container{
@@ -136,17 +144,21 @@ body {
     display: flex;
     color: #F29C38;
     font-family: Playfair Display;
-    padding:80px 20px;
     font-size: 40px;  
     justify-content: center;
+    align-items: center;
     flex-direction: column;
     width:100%;
-    height:auto;
+    min-height: calc(100vh - 80px);
+    padding-top: 80px;  /* equal to nav height */
 }
+
 .name{
     color:#5b3e1f;
 }
+
 nav{
+    height: 80px; /* or whatever your navbar height really is */
     overflow:hidden;
     position: fixed;
     background-color: #fbffc8;
@@ -162,8 +174,7 @@ nav{
     text-align: center;
     align-items: center;
     margin: auto;
-    margin-top: 100px;
-    padding: 100px;
+    
 }
 .introbtngroup{
     display:flex;
@@ -228,10 +239,39 @@ nav{
   background-color: #8f612d;
     
 }
-.Hi{
-    margin-bottom: 30px;
-    color: #F29C38
+.Hi {
+  font-family: "Playfair Display", serif;
+  text-align: center;
+  line-height: 1.15;
+  font-size: clamp(2.4rem, 6vw, 4.5rem);
+  margin: 0;
 }
+
+.Hi span {
+  display: inline-block;
+}
+
+/* Colors */
+.Hi .hi {
+  color: #f29c38;       /* orange */
+  font-weight: 700;
+}
+
+.Hi .name {
+  color: #6b4a1f;       /* dark brown */
+  font-weight: 700;
+}
+
+.Hi .role {
+  color: #f29c38;       /* orange again */
+  font-weight: 700;
+}
+
+/* Slight spacing between lines */
+.Hi br {
+  margin-bottom: 10px;
+}
+
 .download{
   text-decoration: none;
 }
@@ -360,6 +400,7 @@ nav{
   background: #f7e29b;
   border-radius: 26px;
   padding: 38px 20px 30px;
+  min-width: 220px;
   text-align: center;
   cursor: default;
   box-shadow: 0 10px 25px rgba(0,0,0,0.12);
@@ -409,6 +450,38 @@ nav{
   letter-spacing: 1px;
 }
 
+/* Slider wrapper */
+.skills-slider {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  margin-top: 40px;
+}
+
+/* Moving track */
+.skills-track {
+  display: flex;
+  gap: 30px;
+  width: max-content;
+  animation: skills-scroll 20s linear infinite;
+}
+
+/* Infinite scroll animation */
+@keyframes skills-scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.skills-slider:hover .skills-track {
+  animation-play-state: paused;
+}
+
+
+
 @media (max-width: 900px) {
   .skills-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -434,7 +507,6 @@ nav{
 
 
 #projects-section {
-  min-height: 100vh;
   padding: 120px 20px;
   text-align: center;
 }
@@ -566,12 +638,72 @@ nav{
   transform: translateY(-2px);
 }
 
-/* Responsive */
-@media (max-width: 700px) {
-  .project-window {
-    margin-top: 24px;
+@media (max-width: 768px) {
+
+  /* NAV stays the same */
+  nav {
+    height: 110px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0;
+  }
+
+  /* HERO CONTAINER */
+  .intro-container {
+    min-height: calc(100vh - 110px);
+    padding-top: 110px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .intro-text {
+    width: 100%;
+    max-width: 320px;   /* forces a single centered column */
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+  }
+
+  /* HERO TEXT */
+  .Hi {
+    font-size: 1.9rem;
+    line-height: 1.25;
+    margin: 0 auto 20px;
+    text-align: center;
+  }
+
+  .Hi span {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+
+  /* BUTTON GROUP */
+  .introbtngroup {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+  }
+
+  .introbtn {
+    width: 100%;
+    max-width: 320px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+  }
+
+  .download {
+    width: 100%;
+    display: flex;
+    justify-content: center;
   }
 }
+
 
 
 
