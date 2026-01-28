@@ -28,7 +28,7 @@ document.getElementById('contactForm').addEventListener('submit', async function
     
     try {
         const formData = new FormData();
-        formData.append('access_key', '3c3e169f-0ddb-41a7-b294-ac59ed60ef2f'); // Get from web3forms.com
+        formData.append('access_key', '9fd44835-9dce-4f70-8ce4-12965f386f52'); // Get from web3forms.com
         formData.append('name', name);
         formData.append('email', email);
         formData.append('message', message);
