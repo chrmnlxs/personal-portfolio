@@ -29,21 +29,21 @@
         <a class="link" href="#about-section">About Me</a>
         <a class="link" href="#skills-section">Skills</a>
         <a class="link" href="#projects-section">Projects</a>
-        <a class="link" href="#">Contact</a>
+        <a class="link" href="#contact-section">Contact</a>
     </div>
 </nav>
 
 <div class="intro-container">
     <div class="intro-text">
         <h1 class="Hi">
-            <span class="hi">Hi! I’m</span>
+            <span class="hi">Hi! I'm</span>
             <span class="name">Charmaine Alexis Bryant,</span><br>
             <span class="role">a Full-Stack Developer</span><br><br>
         </h1>
 
 
         <div class="introbtngroup">
-            <button id="contact" class="introbtn">Contact Me</button>
+            <button id="contact" class="introbtn" onclick="document.getElementById('contact-section').scrollIntoView({behavior: 'smooth'})">Contact Me</button>
 
             <div class="downloadcv">
                 <a class="download" href="https://drive.google.com/file/d/1IFmYJ8DvZ19wQbOhypQ4aWTcg-QUV_t2/view?usp=sharing" target="_blank">
@@ -58,16 +58,17 @@
 </div>
 
 <section id="about-section">
+    <h2 class="about-main-title">About Me</h2>
+    
     <div class="about-container">
         <div class="about-text">
-            <h2>About Me</h2>
             <p>
-                &nbsp;&nbsp;&nbsp;&nbsp;Hi! I’m <strong>Charmaine Alexis Bryant</strong>, a 22-year-old aspiring
+                &nbsp;&nbsp;&nbsp;&nbsp;Hi! I'm <strong>Charmaine Alexis Bryant</strong>, a 22-year-old aspiring
                 <span class="highlight">web developer</span> from the
-                <span class="highlight">Philippines</span>. I’m currently in my fourth year pursuing a 
+                <span class="highlight">Philippines</span>. I'm currently in my fourth year pursuing a 
                 <strong>Bachelor of Science in Computer Engineering.</strong>
                 <br><br>
-                &nbsp;&nbsp;&nbsp;&nbsp;I’m passionate about creating engaging and user-friendly web experiences,
+                &nbsp;&nbsp;&nbsp;&nbsp;I'm passionate about creating engaging and user-friendly web experiences,
                 focusing on front-end development for now, but I am also eager to learn back-end development to
                 grow into a full-stack developer. At the same time, I am also open to explore other areas in
                 technology to broaden my skills, gain hands-on experience, and discover the career path that
@@ -90,48 +91,47 @@
 </section>
 
 <section id="skills-section">
+    <h2 class="skills-main-title">Skills</h2>
+    
     <div class="skills-inner">
-        <h2>Skills</h2>
-        <br><br>
-
         <div class="skills-slider">
-    <div class="skills-track">
+            <div class="skills-track">
 
-    <!-- First set -->
-    <div class="skill-card">
-        <img src="images/html.png" alt="HTML">
-        <span>HTML5</span>
+            <!-- First set -->
+            <div class="skill-card">
+                <img src="images/html.png" alt="HTML">
+                <span>HTML5</span>
+            </div>
+
+            <div class="skill-card">
+                <img src="images/css3.png" alt="CSS">
+                <span>CSS3</span>
+            </div>
+
+            <div class="skill-card">
+                <img src="images/js.png" alt="JavaScript">
+                <span>JavaScript</span>
+            </div>
+
+            <!-- Duplicate set (IMPORTANT) -->
+            <div class="skill-card">
+                <img src="images/html.png" alt="HTML">
+                <span>HTML5</span>
+            </div>
+
+            <div class="skill-card">
+                <img src="images/css3.png" alt="CSS">
+                <span>CSS3</span>
+            </div>
+
+            <div class="skill-card">
+                <img src="images/js.png" alt="JavaScript">
+                <span>JavaScript</span>
+            </div>
+
+            </div>
+        </div>
     </div>
-
-    <div class="skill-card">
-        <img src="images/css3.png" alt="CSS">
-        <span>CSS3</span>
-    </div>
-
-    <div class="skill-card">
-        <img src="images/js.png" alt="JavaScript">
-        <span>JavaScript</span>
-    </div>
-
-    <!-- Duplicate set (IMPORTANT) -->
-    <div class="skill-card">
-        <img src="images/html.png" alt="HTML">
-        <span>HTML5</span>
-    </div>
-
-    <div class="skill-card">
-        <img src="images/css3.png" alt="CSS">
-        <span>CSS3</span>
-    </div>
-
-    <div class="skill-card">
-        <img src="images/js.png" alt="JavaScript">
-        <span>JavaScript</span>
-    </div>
-
-    </div>
-</div>
-
 </section>
 
 <section id="projects-section">
@@ -202,6 +202,84 @@
 
     </div>
 </section>
+
+<section id="contact-section">
+    <h2 class="contact-main-title">Contact Me</h2>
+    
+    <div class="contact-container">
+        <div class="contact-form-wrapper">
+            <form id="contactForm" class="contact-form">
+                <div class="form-group">
+                    <label for="name">Name :</label>
+                    <input type="text" id="name" name="name" required placeholder="Your name">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required placeholder="your.email@example.com">
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" required placeholder="Your message here..."></textarea>
+                </div>
+
+                <button type="submit" class="send-btn">Send</button>
+            </form>
+
+            <div id="formMessage" class="form-message"></div>
+        </div>
+
+        <div class="contact-info">
+            <div class="contact-item">
+                <div class="contact-icon">
+                    <img src="images/email.png" alt="Email">
+                </div>
+                <div class="contact-details">
+                    <a href="mailto:Charmainebryant223@gmail.com">Charmainebryant223@gmail.com</a>
+                </div>
+            </div>
+
+            <div class="contact-item">
+                <div class="contact-icon">
+                    <img src="images/github.png" alt="GitHub">
+                </div>
+                <div class="contact-details">
+                    <a href="https://github.com/chrmnlxs" target="_blank">chrmnlxs</a>
+                </div>
+            </div>
+
+            <div class="contact-item">
+                <div class="contact-icon">
+                    <img src="images/linkedin.png" alt="LinkedIn">
+                </div>
+                <div class="contact-details">
+                    <a href="https://linkedin.com/in/charmainebryant" target="_blank">charmainebryant</a>
+                </div>
+            </div>
+
+            <div class="contact-item">
+                <div class="contact-icon">
+                    <img src="images/phone-call.png" alt="Phone">
+                </div>
+                <div class="contact-details">
+                    <span>(+63) 9686615021</span>
+                </div>
+            </div>
+
+            <div class="contact-item">
+                <div class="contact-icon">
+                    <img src="images/gps.png" alt="Location">
+                </div>
+                <div class="contact-details">
+                    <span>Malolos City, Bulacan</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script src="script.js"></script>
 
 </body>
 </html>
