@@ -24,12 +24,19 @@
         <img src="images/myicon.png" width="48px">
     </div>  
 
-    <div class="links-container">
-        <a class="link" href="#">Home</a>
-        <a class="link" href="#about-section">About Me</a>
-        <a class="link" href="#skills-section">Skills</a>
-        <a class="link" href="#projects-section">Projects</a>
-        <a class="link" href="#contact-section">Contact</a>
+    <!-- Hamburger Menu Button -->
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+    <div class="links-container" id="navLinks">
+        <a class="link" href="#" onclick="closeMenu()">Home</a>
+        <a class="link" href="#about-section" onclick="closeMenu()">About</a>
+        <a class="link" href="#skills-section" onclick="closeMenu()">Skills</a>
+        <a class="link" href="#projects-section" onclick="closeMenu()">Projects</a>
+        <a class="link" href="#contact-section" onclick="closeMenu()">Contact</a>
     </div>
 </nav>
 
@@ -38,15 +45,14 @@
         <h1 class="Hi">
             <span class="hi">Hi! I'm</span>
             <span class="name">Charmaine Alexis Bryant,</span><br>
-            <span class="role">a Front-end Developer</span><br><br>
+            <span class="role">a Front-end Developer</span>
         </h1>
-
 
         <div class="introbtngroup">
             <button id="contact" class="introbtn" onclick="document.getElementById('contact-section').scrollIntoView({behavior: 'smooth'})">Contact Me</button>
 
             <div class="downloadcv">
-                <a class="download" href="https://drive.google.com/file/d/1IFmYJ8DvZ19wQbOhypQ4aWTcg-QUV_t2/view?usp=sharing" target="_blank">
+                <a class="download" href="https://drive.google.com/file/d/1CyJZa_p5xSWBtmyBizyDTP24vIzrJqdn/view?usp=sharing" target="_blank">
                     <button id="cv" class="introbtn">
                         <img src="images/download.png" width="40px">
                         Download / View CV
@@ -148,12 +154,12 @@
             </div>
 
             <div class="window-content">
-                <p>A responsive personal portfolio showcasing my skills and projects.</p>
+                <p>A responsive personal portfolio website showcasing my skills and projects.</p>
                 <div class="window-tags">
                 </div>
                 <div class="window-links">
-                    <a href="#">Live</a>
-                    <a href="#">Github</a>
+                    <a href="https://cabryant.netlify.app/" target="_blank">Live</a>
+                    <a href="https://github.com/chrmnlxs/personal-portfolio" target="_blank">GitHub</a>
                 </div>
             </div>
         </article>
@@ -174,7 +180,7 @@
                 </div>
                 <div class="window-links">
                     <a href="#">Live</a>
-                    <a href="#">Github</a>
+                    <a href="#">GitHub</a>
                 </div>
             </div>
         </article>
@@ -195,7 +201,7 @@
                 </div>
                 <div class="window-links">
                     <a href="#">Live</a>
-                    <a href="#">Github</a>
+                    <a href="#">GitHub</a>
                 </div>
             </div>
         </article>

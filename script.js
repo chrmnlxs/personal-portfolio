@@ -1,6 +1,3 @@
-// Web3Forms Implementation - 100% FREE, UNLIMITED submissions!
-// Get your access key from: https://web3forms.com/
-
 document.getElementById('contactForm').addEventListener('submit', async function(e) {
     e.preventDefault();
     
@@ -68,7 +65,6 @@ function showMessage(text, type) {
     }, 5000);
 }
 
-// Add input animation effects
 document.querySelectorAll('.contact-form input, .contact-form textarea').forEach(input => {
     input.addEventListener('focus', function() {
         this.parentElement.classList.add('focused');
@@ -79,4 +75,49 @@ document.querySelectorAll('.contact-form input, .contact-form textarea').forEach
             this.parentElement.classList.remove('focused');
         }
     });
+});
+// ============================
+// HAMBURGER MENU FUNCTIONALITY
+// ============================
+
+const hamburger = document.getElementById('hamburger');
+const navLinks = document.getElementById('navLinks');
+
+if (hamburger && navLinks) {
+    hamburger.addEventListener('click', () => {
+        hamburger.classList.toggle('active');
+        navLinks.classList.toggle('active');
+        document.body.style.overflow = navLinks.classList.contains('active') ? 'hidden' : 'auto';
+    });
+}
+
+// Close menu function
+function closeMenu() {
+    if (navLinks && hamburger) {
+        navLinks.classList.remove('active');
+        hamburger.classList.remove('active');
+        document.body.style.overflow = 'auto';
+    }
+}
+
+// Close menu when clicking outside
+document.addEventListener('click', (e) => {
+    if (navLinks && hamburger) {
+        if (!navLinks.contains(e.target) && !hamburger.contains(e.target)) {
+            navLinks.classList.remove('active');
+            hamburger.classList.remove('active');
+            document.body.style.overflow = 'auto';
+        }
+    }
+});
+
+// Close menu on window resize to desktop size
+window.addEventListener('resize', () => {
+    if (window.innerWidth > 768) {
+        if (navLinks && hamburger) {
+            navLinks.classList.remove('active');
+            hamburger.classList.remove('active');
+            document.body.style.overflow = 'auto';
+        }
+    }
 });
