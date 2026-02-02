@@ -1,291 +1,302 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="images/myicon.png">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&display=swap">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&display=swap">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CA</title>
 </head>
+
 <body>
 
-<div class="background">
-    <span class="ball"></span>
-    <span class="ball"></span>
-    <span class="ball"></span>
-    <span class="ball"></span>
-    <span class="ball"></span>
-    <span class="ball"></span>
-</div>
-
-<nav>
-    <div class="brand-container">
-        <img src="images/myicon.png" width="48px">
-    </div>  
-
-    <!-- Hamburger Menu Button -->
-    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
-        <span></span>
-        <span></span>
-        <span></span>
-    </button>
-
-    <div class="links-container" id="navLinks">
-        <a class="link" href="#" onclick="closeMenu()">Home</a>
-        <a class="link" href="#about-section" onclick="closeMenu()">About</a>
-        <a class="link" href="#skills-section" onclick="closeMenu()">Skills</a>
-        <a class="link" href="#projects-section" onclick="closeMenu()">Projects</a>
-        <a class="link" href="#contact-section" onclick="closeMenu()">Contact</a>
+    <div class="background">
+        <span class="ball"></span>
+        <span class="ball"></span>
+        <span class="ball"></span>
+        <span class="ball"></span>
+        <span class="ball"></span>
+        <span class="ball"></span>
     </div>
-</nav>
 
-<div class="intro-container">
-    <div class="intro-text">
-        <h1 class="Hi">
-            <span class="hi">Hi! I'm</span>
-            <span class="name">Charmaine Alexis Bryant,</span><br>
-            <span class="role">a Front-end Developer</span>
-        </h1>
-
-        <div class="introbtngroup">
-            <button id="contact" class="introbtn" onclick="document.getElementById('contact-section').scrollIntoView({behavior: 'smooth'})">Contact Me</button>
-
-            <div class="downloadcv">
-                <a class="download" href="https://drive.google.com/file/d/1vzTX1UJSK8qz0mQyOoqqBdlaCKB1UfK3/view?usp=sharing" target="_blank">
-                    <button id="cv" class="introbtn">
-                        <img src="images/download.png" width="40px">
-                        Download / View CV
-                    </button>
-                </a>
-            </div>  
-        </div>
-    </div>
-</div>
-
-<section id="about-section">
-    <h2 class="about-main-title">About Me</h2>
-    
-    <div class="about-container">
-        <div class="about-text">
-            <p>
-                &nbsp;&nbsp;&nbsp;&nbsp;Hi! I'm <strong>Charmaine Alexis Bryant</strong>, a 22-year-old aspiring
-                <span class="highlight">web developer</span> from the
-                <span class="highlight">Philippines</span>. I'm currently in my fourth year pursuing a 
-                <strong>Bachelor of Science in Computer Engineering.</strong>
-                <br><br>
-                &nbsp;&nbsp;&nbsp;&nbsp;I'm passionate about creating engaging and user-friendly web experiences,
-                focusing on front-end development for now, but I am also eager to learn back-end development to
-                grow into a full-stack developer. At the same time, I am also open to explore other areas in
-                technology to broaden my skills, gain hands-on experience, and discover the career path that
-                truly fits me.
-            </p>
+    <nav>
+        <div class="brand-container">
+            <img src="images/myicon.png" width="48px">
         </div>
 
-        <div class="about-photo">
-            <div class="browser-frame">
-                <div class="browser-bar">
-                    <span class="close"></span>
-                    <span class="min"></span>
-                    <span class="max"></span>
+        <!-- Hamburger Menu Button -->
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <div class="links-container" id="navLinks">
+            <a class="link" href="#" onclick="closeMenu()">Home</a>
+            <a class="link" href="#about-section" onclick="closeMenu()">About</a>
+            <a class="link" href="#skills-section" onclick="closeMenu()">Skills</a>
+            <a class="link" href="#projects-section" onclick="closeMenu()">Projects</a>
+            <a class="link" href="#contact-section" onclick="closeMenu()">Contact</a>
+        </div>
+    </nav>
+
+    <div class="intro-container">
+        <div class="intro-text">
+            <h1 class="Hi">
+                <span class="hi">Hi! I'm</span>
+                <span class="name">Charmaine Alexis Bryant,</span><br>
+                <span class="role">a Front-end Developer</span>
+            </h1>
+
+            <div class="introbtngroup">
+                <button id="contact" class="introbtn"
+                    onclick="document.getElementById('contact-section').scrollIntoView({behavior: 'smooth'})">Contact
+                    Me</button>
+
+                <div class="downloadcv">
+                    <a class="download"
+                        href="https://drive.google.com/file/d/1vzTX1UJSK8qz0mQyOoqqBdlaCKB1UfK3/view?usp=sharing"
+                        target="_blank">
+                        <button id="cv" class="introbtn">
+                            <img src="images/download.png" width="40px">
+                            Download / View CV
+                        </button>
+                    </a>
                 </div>
-                <img src="images/pangcv12.png" alt="Charmaine Alexis Bryant">
-                <div class="browser-footer"></div>
             </div>
         </div>
     </div>
-</section>
 
-<section id="skills-section">
-    <h2 class="skills-main-title">Skills</h2>
-    
-    <div class="skills-inner">
-        <div class="skills-slider">
-            <div class="skills-track">
+    <section id="about-section">
+        <h2 class="about-main-title">About Me</h2>
 
-            <!-- First set -->
-            <div class="skill-card">
-                <img src="images/html.png" alt="HTML">
-                <span>HTML5</span>
-            </div>
-
-            <div class="skill-card">
-                <img src="images/css3.png" alt="CSS">
-                <span>CSS3</span>
-            </div>
-
-            <div class="skill-card">
-                <img src="images/js.png" alt="JavaScript">
-                <span>JavaScript</span>
-            </div>
-
-            <!-- Duplicate set (IMPORTANT) -->
-            <div class="skill-card">
-                <img src="images/html.png" alt="HTML">
-                <span>HTML5</span>
-            </div>
-
-            <div class="skill-card">
-                <img src="images/css3.png" alt="CSS">
-                <span>CSS3</span>
-            </div>
-
-            <div class="skill-card">
-                <img src="images/js.png" alt="JavaScript">
-                <span>JavaScript</span>
-            </div>
-
-            </div>
-        </div>
-    </div>
-</section>
-
-<section id="projects-section">
-    <h2 class="projects-title">Projects</h2>
-
-    <div class="projects-stack">
-
-        <article class="project-window">
-            <div class="window-bar">
-                <div class="window-dots">
-                    <span></span><span></span><span></span>
-                </div>
-                <h3>Portfolio Website</h3>
-            </div>
-
-            <div class="window-content">
-                <p>A responsive personal portfolio website showcasing my skills and projects.</p>
-                <div class="window-tags">
-                </div>
-                <div class="window-links">
-                    <a href="https://cabryant.netlify.app/" target="_blank">Live</a>
-                    <a href="https://github.com/chrmnlxs/personal-portfolio" target="_blank">GitHub</a>
-                </div>
-            </div>
-        </article>
-
-        <article class="project-window">
-            <div class="window-bar">
-                <div class="window-dots">
-                    <span></span><span></span><span></span>
-                </div>
-                <h3>Lorem Ipsum</h3>
-            </div>
-
-            <div class="window-content">
+        <div class="about-container">
+            <div class="about-text">
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    &nbsp;&nbsp;&nbsp;&nbsp;Hi! I'm <strong>Charmaine Alexis Bryant</strong>, a 22-year-old aspiring
+                    <span class="highlight">web developer</span> from the
+                    <span class="highlight">Philippines</span>. I'm currently in my fourth year pursuing a
+                    <strong>Bachelor of Science in Computer Engineering.</strong>
+                    <br><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;I'm passionate about creating engaging and user-friendly web experiences,
+                    focusing on front-end development for now, but I am also eager to learn back-end development to
+                    grow into a full-stack developer. At the same time, I am also open to explore other areas in
+                    technology to broaden my skills, gain hands-on experience, and discover the career path that
+                    truly fits me.
                 </p>
-                <div class="window-tags">
-                </div>
-                <div class="window-links">
-                    <a href="#">Live</a>
-                    <a href="#">GitHub</a>
-                </div>
-            </div>
-        </article>
-
-        <article class="project-window">
-            <div class="window-bar">
-                <div class="window-dots">
-                    <span></span><span></span><span></span>
-                </div>
-                <h3>Lorem Ipsum</h3>
             </div>
 
-            <div class="window-content">
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                </p>
-                <div class="window-tags">
-                </div>
-                <div class="window-links">
-                    <a href="#">Live</a>
-                    <a href="#">GitHub</a>
-                </div>
-            </div>
-        </article>
-
-    </div>
-</section>
-
-<section id="contact-section">
-    <h2 class="contact-main-title">Contact Me</h2>
-    
-    <div class="contact-container">
-        <div class="contact-form-wrapper">
-            <form id="contactForm" class="contact-form">
-                <div class="form-group">
-                    <label for="name">Name :</label>
-                    <input type="text" id="name" name="name" required placeholder="Your name">
-                </div>
-
-                <div class="form-group">
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required placeholder="your.email@example.com">
-                </div>
-
-                <div class="form-group">
-                    <label for="message">Message:</label>
-                    <textarea id="message" name="message" rows="5" required placeholder="Your message here..."></textarea>
-                </div>
-
-                <button type="submit" class="send-btn">Send</button>
-            </form>
-
-            <div id="formMessage" class="form-message"></div>
-        </div>
-
-        <div class="contact-info">
-            <div class="contact-item">
-                <div class="contact-icon">
-                    <img src="images/email.png" alt="Email">
-                </div>
-                <div class="contact-details">
-                    <a href="mailto:charmalexisbryant@gmail.com" target="_blank">charmalexisbryant@gmail.com</a>
-                </div>
-            </div>
-
-            <div class="contact-item">
-                <div class="contact-icon">
-                    <img src="images/github.png" alt="GitHub">
-                </div>
-                <div class="contact-details">
-                    <a href="https://github.com/chrmnlxs" target="_blank">chrmnlxs</a>
-                </div>
-            </div>
-
-            <div class="contact-item">
-                <div class="contact-icon">
-                    <img src="images/linkedin.png" alt="LinkedIn">
-                </div>
-                <div class="contact-details">
-                    <a href="https://linkedin.com/in/charmainebryant" target="_blank">charmainebryant</a>
-                </div>
-            </div>
-
-            <div class="contact-item">
-                <div class="contact-icon">
-                    <img src="images/phone-call.png" alt="Phone">
-                </div>
-                <div class="contact-details">
-                    <span>(+63) 9686615021</span>
-                </div>
-            </div>
-
-            <div class="contact-item">
-                <div class="contact-icon">
-                    <img src="images/gps.png" alt="Location">
-                </div>
-                <div class="contact-details">
-                    <span>Malolos City, Bulacan, Philippines.</span>
+            <div class="about-photo">
+                <div class="browser-frame">
+                    <div class="browser-bar">
+                        <span class="close"></span>
+                        <span class="min"></span>
+                        <span class="max"></span>
+                    </div>
+                    <img src="images/pangcv12.png" alt="Charmaine Alexis Bryant">
+                    <div class="browser-footer"></div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<script src="script.js"></script>
+    <section id="skills-section">
+        <h2 class="skills-main-title">Skills</h2>
+
+        <div class="skills-inner">
+            <div class="skills-slider">
+                <div class="skills-track">
+
+                    <!-- First set -->
+                    <div class="skill-card">
+                        <img src="images/html.png" alt="HTML">
+                        <span>HTML5</span>
+                    </div>
+
+                    <div class="skill-card">
+                        <img src="images/css3.png" alt="CSS">
+                        <span>CSS3</span>
+                    </div>
+
+                    <div class="skill-card">
+                        <img src="images/js.png" alt="JavaScript">
+                        <span>JavaScript</span>
+                    </div>
+
+                    <!-- Duplicate set (IMPORTANT) -->
+                    <div class="skill-card">
+                        <img src="images/html.png" alt="HTML">
+                        <span>HTML5</span>
+                    </div>
+
+                    <div class="skill-card">
+                        <img src="images/css3.png" alt="CSS">
+                        <span>CSS3</span>
+                    </div>
+
+                    <div class="skill-card">
+                        <img src="images/js.png" alt="JavaScript">
+                        <span>JavaScript</span>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects-section">
+        <h2 class="projects-title">Projects</h2>
+
+        <div class="projects-stack">
+
+            <article class="project-window">
+                <div class="window-bar">
+                    <div class="window-dots">
+                        <span></span><span></span><span></span>
+                    </div>
+                    <h3>Portfolio Website</h3>
+                </div>
+
+                <div class="window-content">
+                    <p>A responsive personal portfolio website showcasing my skills and projects.</p>
+                    <div class="window-tags">
+                    </div>
+                    <div class="window-links">
+                        <a href="https://cabryant.netlify.app/" target="_blank">Live</a>
+                        <a href="https://github.com/chrmnlxs/personal-portfolio" target="_blank">GitHub</a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="project-window">
+                <div class="window-bar">
+                    <div class="window-dots">
+                        <span></span><span></span><span></span>
+                    </div>
+                    <h3>Lorem Ipsum</h3>
+                </div>
+
+                <div class="window-content">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua.
+                    </p>
+                    <div class="window-tags">
+                    </div>
+                    <div class="window-links">
+                        <a href="#">Live</a>
+                        <a href="#">GitHub</a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="project-window">
+                <div class="window-bar">
+                    <div class="window-dots">
+                        <span></span><span></span><span></span>
+                    </div>
+                    <h3>Lorem Ipsum</h3>
+                </div>
+
+                <div class="window-content">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua.
+                    </p>
+                    <div class="window-tags">
+                    </div>
+                    <div class="window-links">
+                        <a href="#">Live</a>
+                        <a href="#">GitHub</a>
+                    </div>
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+    <section id="contact-section">
+        <h2 class="contact-main-title">Contact Me</h2>
+
+        <div class="contact-container">
+            <div class="contact-form-wrapper">
+                <form id="contactForm" class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name :</label>
+                        <input type="text" id="name" name="name" required placeholder="Your name">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required placeholder="your.email@example.com">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="5" required
+                            placeholder="Your message here..."></textarea>
+                    </div>
+
+                    <button type="submit" class="send-btn">Send</button>
+                </form>
+
+                <div id="formMessage" class="form-message"></div>
+            </div>
+
+            <div class="contact-info">
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <img src="images/email.png" alt="Email">
+                    </div>
+                    <div class="contact-details">
+                        <a href="mailto:charmalexisbryant@gmail.com" target="_blank">charmalexisbryant@gmail.com</a>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <img src="images/github.png" alt="GitHub">
+                    </div>
+                    <div class="contact-details">
+                        <a href="https://github.com/chrmnlxs" target="_blank">chrmnlxs</a>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <img src="images/linkedin.png" alt="LinkedIn">
+                    </div>
+                    <div class="contact-details">
+                        <a href="https://linkedin.com/in/charmainebryant" target="_blank">charmainebryant</a>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <img src="images/phone-call.png" alt="Phone">
+                    </div>
+                    <div class="contact-details">
+                        <span>(+63) 9686615021</span>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <img src="images/gps.png" alt="Location">
+                    </div>
+                    <div class="contact-details">
+                        <span>Malolos City, Bulacan, Philippines.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
 
 </body>
+
 </html>
